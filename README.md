@@ -19,7 +19,9 @@
 
 ## General Information
 
-This is a PHP based console application that scrapes the following website url https://wltest.dns-systems.net/ and returns a JSON array of all product options on the page. The output is sorted by annual price, in ascending order.
+This is a PHP based console application that scrapes the following website url https://wltest.dns-systems.net/ and returns a JSON array of all product options on the page. 
+
+The output is sorted by annual price, in ascending order.
 
 
 ## Technologies Used
@@ -145,15 +147,17 @@ OK (12 tests, 63 assertions)
 
 ## Assumptions
 
+- The output should at minimum contain with keys named exactly as described in the brief.
+- It is acceptable to add extra fields to the output originally described in the brief, if potentially useful.
+- To avoid confusion, the `price` field in the output represents the price displayed on the webpage. Additional fields have been provided in the output to provide additional context, and show how much the option costs both monthly and annually, with calculations performed where needed.
 - No need to persist data, therefore no need for a database.
-- Displaying a `price` field as per instructions - assuming it represents the price displayed on the page. Additional fields have been provided in the output for calculated prices.
 - We want to display currency symbols in the output.
 
 
 ## Potential Improvements
 
 - Consider a Command/Command Handler design pattern to encapsulate and handle the single use case described in the brief. Using a command bus like Symfony Messenger can help achieve this.
-- Consider returning collection classes where appropriate, to aid the handling of arrays.
+- Consider returning Collection classes where appropriate, to aid the handling of arrays.
 - Consider a more fleshed out Money object for `ProductOption` price attributes.
 - Consider a Repository layer.
 - Better exception handling, custom exceptions, etc.
