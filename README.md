@@ -147,9 +147,9 @@ OK (12 tests, 63 assertions)
 
 ## Assumptions
 
-- The output should at minimum contain with keys named exactly as described in the brief.
+- The output should at minimum contain keys named exactly as described in the brief.
 - It is acceptable to add extra fields to the output originally described in the brief, if potentially useful.
-- To avoid confusion, the `price` field in the output represents the price displayed on the webpage. Additional fields have been provided in the output to provide additional context, and show how much the option costs both monthly and annually, with calculations performed where needed.
+- To avoid confusion, the `price` field in the output represents the price displayed on the webpage. Additional fields have been provided in the output to provide additional context, and show how much the option costs both monthly and annually, with respective calculations performed where needed.
 - No need to persist data, therefore no need for a database.
 - We want to display currency symbols in the output.
 
